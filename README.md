@@ -7,7 +7,7 @@ Creates multiple instances of localforage with different configs.
 1. `git clone https://github.com/psalaets/localforage-multi-instance.git`
 2. `cd localforage-multi-instance`
 3. `bower install`
-4. Open html files in browser
+4. Open html files in browser and look for messages in developer console
 
 ## Files
 ### setting-name.html
