@@ -24,5 +24,6 @@ Two localforage instances with different `name` and `storeName` config
 
 ## Related links
 
-- [localforage issue 342](https://github.com/mozilla/localForage/issues/342)
-- [localforage PR 367](https://github.com/mozilla/localForage/pull/367)
+- [localforage issue 342](https://github.com/mozilla/localForage/issues/342) - Cannot create instances with same `name`
+- [localforage issue 260](https://github.com/mozilla/localForage/issues/260) - Need docs for multiple storage feature
+- [localforage PR 367](https://github.com/mozilla/localForage/pull/367) - Added docs for issue 260
