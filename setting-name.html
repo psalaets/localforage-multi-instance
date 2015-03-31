@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Setting name</title>
+  <script src="bower_components/localforage/dist/localforage.js"></script>
+  <script>
+
+    var store1 = localforage.createInstance({
+      name: 'Store 1'
+    });
+
+    var store2 = localforage.createInstance({
+      name: 'Store 2'
+    });
+
+    var key = 'key';
+
+    // (assuming browser is anything but IE)
+
+    // set a value in each store under the same key
+    Promise.all([
+      store1.setItem(key, 'value1'),
+      store2.setItem(key, 'value2')
+    ]).then(function() {
+      // now get the values
+      return Promise.all([
+        store1.getItem(key),
+        store2.getItem(key)
+      ]);
+    }).then(function(values) {
+      console.log('value from store1 is ' + values[0]);
+      console.log('value from store2 is ' + values[1]);
+    }).catch(function(error) {
+      console.error(error);
+    });
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
