@@ -4,8 +4,8 @@ Creates multiple instances of localforage with different configs.
 
 ## Running
 
-1. `git clone ____`
-2. `cd <into dir>`
+1. `git clone https://github.com/psalaets/localforage-multi-instance.git`
+2. `cd localforage-multi-instance`
 3. `bower install`
 4. Open html files in browser
 
